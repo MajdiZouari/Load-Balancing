@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: utilisateur
+
+server:
+  port: 8888
+
+lovotech-bonjour:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8090,localhost:9092,localhost:9999
+    ServerListRefreshInterval: 15000
